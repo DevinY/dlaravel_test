@@ -1,0 +1,3 @@
+[submodule "dlaravel"]
+	path = dlaravel
+	url = https://github.com/DevinY/dlaravel.git
