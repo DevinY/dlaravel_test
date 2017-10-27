@@ -14,3 +14,15 @@ docker-compose up -d
 
 二、執行測試指令
 ./run_test.sh
+
+
+### 如果要進人dind的執行環境，可以簡單的執行
+
+非root
+
+docker-compose exec -u dlaravel dind bash
+
+如果要使用root身份
+
+docker-compose exec dind bash
+
