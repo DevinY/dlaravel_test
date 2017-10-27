@@ -2,9 +2,13 @@
 
 為了強化D-Laravel每一版本釋出的穩定性，加了一個簡易的測試公具，對D-Laravel進行想關功能測試。
 
-這個工具會在測試的dlaravel目錄的sites資料夾建立及刪除Project，請務使用在正式的D-Laravel環境。
+這個工具使用的test.sh會在測試的dlaravel目錄的sites資料夾建立及刪除Project，請勿使用在正式的D-Laravel環境。
 
 可透過docker-compose.yml掛載要測試的D-Laravel資料夾。
+
+如果您要使用D-Laravel，不需下載此工具，這是開發Ｄ-Laravel上線前使用的，哈，因為我發覺Ｄ-Laravel新功更新時，很容易造成side efect。
+
+如果您對這個Docker in Docker環境有興趣，歡迎下載研究，目前這個測試功能非常的初版，有機會時，我會再調整及優化。
 
 基本使用方式:
 
