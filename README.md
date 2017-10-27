@@ -18,6 +18,8 @@ docker-compose up -d
 
 ### 如果要進人dind的執行環境，可以簡單的執行
 
+這裡的image已安裝了dockr-compose了，所以如果要拿來進行其他docker相關的測試也是可以用的。
+
 非root
 
 docker-compose exec -u dlaravel dind bash
