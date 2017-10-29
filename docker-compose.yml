@@ -2,7 +2,8 @@ version: '3'
 services:
  dind:
   build: .
-  image: deviny/dlaravel_test
+  image: deviny/dlaravel_test:latest
+  container_name: "dind"
   volumes:
   - ./dlaravel:/dlaravel
   networks:

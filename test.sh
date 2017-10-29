@@ -1,6 +1,6 @@
 #!/bin/bash
 source bash_colors
-#set -e
+set -e
 echo -e "${BRed}進入${BGreen}D-Laravel${BRed}資料夾${Color_Off}"
 cd dlaravel
 
@@ -26,13 +26,13 @@ fi
 
 test_case=( "./console version" 
             "./console up" 
+            "./create first_project"
             "./console top" 
             "./console top db" 
             "./console ps"
-            "./console custom"
+            "./console random"
             "./console info"
             "./console normal"
-            "./create first_project"
             "cd sites/first_project"
             )
 for i in "${test_case[@]}"
@@ -87,13 +87,12 @@ ${MsgCommand}
 #使用.env時的測試
 test_case=( "./console down" 
             "./console up" 
+            "./create second_project"
             "./console top" 
             "./console top db" 
             "./console ps"
             "./console custom"
             "./console info"
-            "./console normal"
-            "./create second_project"
             "cd sites/second_project"
             )
 for i in "${test_case[@]}"
@@ -118,6 +117,12 @@ docker-compose -f ../../docker-compose.yml exec -u dlaravel php second_project/v
 
 echo -e "${BPurple}回Project資料夾${Color_Off}"
 cd ../..
+
+Msg="Run:"
+MsgCommand="./console supervisor up"
+echo -e "${BRed}${Msg}${Bcolor_Off}${BGreen}${MsgCommand}${Color_Off}"
+${MsgCommand}
+
 ./console down
 
 echo -e "${BGreen}Finish${Color_Off}"
