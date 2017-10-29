@@ -14,9 +14,9 @@
 
 因為您的volume可能會爆掉，這裡我會用docker volume prune清除沒用的volumes。
 
-如果您不確定您環境是否可以這樣清除，請勿使用!!
+如果您不確定您docker環境是否可以這樣清除，請勿下載此repo使用!!
 
-基本使用方式:
+### 基本使用方式:
 
 一、啟動Docker In Docker，服務名稱為dind
 
