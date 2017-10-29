@@ -119,7 +119,7 @@ echo -e "${BPurple}回Project資料夾${Color_Off}"
 cd ../..
 
 Msg="Run:"
-MsgCommand="./console supervisor up"
+MsgCommand="./console supervisor start"
 echo -e "${BRed}${Msg}${Bcolor_Off}${BGreen}${MsgCommand}${Color_Off}"
 ${MsgCommand}
 
